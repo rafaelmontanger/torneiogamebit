@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranking Gamebit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .ranking-container {
+      overflow-x: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 960px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #eaeaf2;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    td {
+      font-size: 14px;
+    }
+
+    .sticky-col {
+      position: sticky;
+      left: 0;
+      background: white;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
+      z-index: 1;
+    }
+
+    .first-place {
+      background-color: #fff5d0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        font-size: 13px;
+      }
+      th, td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ranking-container">
+    <table>
+      <thead>
+        <tr>
+          <th class="sticky-col">🏆 Classificação</th>
+          <th>🎯 PTS</th>
+          <th>PJ</th>
+          <th>✅ V</th>
+          <th>🤝 E</th>
+          <th>❌ D</th>
+          <th>⚽ GP</th>
+          <th>🛡️ GS</th>
+          <th>🧱 SG</th>
+          <th>📊 %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="first-place">
+          <td class="sticky-col">1º virutsorganic</td>
+          <td>45</td>
+          <td>25</td>
+          <td>13</td>
+          <td>6</td>
+          <td>6</td>
+          <td>45</td>
+          <td>25</td>
+          <td>20</td>
+          <td>52%</td>
+        </tr>
+        <tr>
+          <td class="sticky-col">2º Rafael</td>
+          <td>55</td>
+          <td>30</td>
+          <td>15</td>
+          <td>10</td>
+          <td>5</td>
+          <td>45</td>
+          <td>25</td>
+          <td>20</td>
+          <td>65%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
