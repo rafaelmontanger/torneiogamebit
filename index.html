@@ -27,9 +27,10 @@
     }
 
     th, td {
-      padding: 12px 16px;
+      padding: 12px 8px; /* Ajustado padding */
       text-align: center;
       border-bottom: 1px solid #eee;
+      white-space: nowrap; /* Adicionado para evitar quebra de linha em nomes longos */
     }
 
     th {
@@ -47,7 +48,17 @@
       left: 0;
       background: white;
       box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
-      z-index: 1;
+      z-index: 2; /* Aumentado z-index para garantir que fique por cima */
+      min-width: 60px; /* Largura mínima para a coluna de posição */
+      width: 60px; /* Largura fixa */
+    }
+
+    .sticky-col-2 {
+      position: sticky;
+      left: 60px; /* Largura da primeira coluna */
+      background: white;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.02);
+      z-index: 2; /* Aumentado z-index para garantir que fique por cima */
     }
 
     .first-place {
@@ -57,10 +68,11 @@
 
     @media (max-width: 768px) {
       table {
-        font-size: 13px;
+        font-size: 12px; /* Ajustado para menor em mobile */
+        min-width: unset; /* Remove min-width em mobile para melhor adaptação */
       }
       th, td {
-        padding: 8px 10px;
+        padding: 6px 6px; /* Ajustado padding em mobile */
       }
     }
   </style>
@@ -70,7 +82,8 @@
     <table>
       <thead>
         <tr>
-          <th class="sticky-col">🏆 Classificação</th>
+          <th class="sticky-col">#</th>
+          <th class="sticky-col-2">👤 Jogador</th>
           <th>🎯 PTS</th>
           <th>PJ</th>
           <th>✅ V</th>
@@ -84,56 +97,9 @@
       </thead>
       <tbody>
         <tr class="first-place">
-          <td class="sticky-col">5º Ana</td>
-          <td>120</td>
-          <td>60</td>
-          <td>45</td>
-          <td>90</td>
-          <td>30</td>
-          <td>90</td>
-          <td>30</td>
-          <td>45</td>
-          <td>60</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">2º Bruna</td>
-          <td>120</td>
-          <td>60</td>
-          <td>45</td>
-          <td>90</td>
-          <td>30</td>
-          <td>90</td>
-          <td>45</td>
-          <td>45</td>
-          <td>60</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">2º Bruna</td>
-          <td>120</td>
-          <td>60</td>
-          <td>45</td>
-          <td>90</td>
-          <td>30</td>
-          <td>90</td>
-          <td>45</td>
-          <td>45</td>
-          <td>60</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">4º João</td>
-          <td>120</td>
-          <td>60</td>
-          <td>45</td>
-          <td>90</td>
-          <td>30</td>
-          <td>90</td>
-          <td>45</td>
-          <td>45</td>
-          <td>60</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">1º Lucasjoazinho5</td>
-          <td>120</td>
+          <td class="sticky-col">1º</td>
+          <td class="sticky-col-2">Lucasjoazinho5</td>
+          <td>460</td>
           <td>60</td>
           <td>45</td>
           <td>90</td>
@@ -144,8 +110,9 @@
           <td>60</td>
         </tr>
         <tr class="">
-          <td class="sticky-col">4º João</td>
-          <td>120</td>
+          <td class="sticky-col">2º</td>
+          <td class="sticky-col-2">Rafael</td>
+          <td>450</td>
           <td>60</td>
           <td>45</td>
           <td>90</td>
@@ -156,8 +123,9 @@
           <td>60</td>
         </tr>
         <tr class="">
-          <td class="sticky-col">3º Rafael</td>
-          <td>120</td>
+          <td class="sticky-col">3º</td>
+          <td class="sticky-col-2">João</td>
+          <td>300</td>
           <td>60</td>
           <td>45</td>
           <td>90</td>
@@ -168,9 +136,60 @@
           <td>60</td>
         </tr>
         <tr class="">
-          <td class="sticky-col">6º
- fernando
-</td>
+          <td class="sticky-col">4º</td>
+          <td class="sticky-col-2">cleber</td>
+          <td>220</td>
+          <td>70</td>
+          <td>50</td>
+          <td>15</td>
+          <td>5</td>
+          <td>100</td>
+          <td>50</td>
+          <td>50</td>
+          <td>70</td>
+        </tr>
+        <tr class="">
+          <td class="sticky-col">5º</td>
+          <td class="sticky-col-2">Bruna</td>
+          <td>180</td>
+          <td>60</td>
+          <td>45</td>
+          <td>90</td>
+          <td>30</td>
+          <td>90</td>
+          <td>45</td>
+          <td>45</td>
+          <td>60</td>
+        </tr>
+        <tr class="">
+          <td class="sticky-col">6º</td>
+          <td class="sticky-col-2">João</td>
+          <td>160</td>
+          <td>60</td>
+          <td>45</td>
+          <td>90</td>
+          <td>30</td>
+          <td>90</td>
+          <td>45</td>
+          <td>45</td>
+          <td>60</td>
+        </tr>
+        <tr class="">
+          <td class="sticky-col">7º</td>
+          <td class="sticky-col-2">Rafael</td>
+          <td>150</td>
+          <td>60</td>
+          <td>45</td>
+          <td>90</td>
+          <td>30</td>
+          <td>90</td>
+          <td>45</td>
+          <td>45</td>
+          <td>60</td>
+        </tr>
+        <tr class="">
+          <td class="sticky-col">8º</td>
+          <td class="sticky-col-2">fernando</td>
           <td>150</td>
           <td>45</td>
           <td>30</td>
@@ -182,14 +201,28 @@
           <td>75</td>
         </tr>
         <tr class="">
-          <td class="sticky-col">3º Rafael</td>
-          <td>120</td>
+          <td class="sticky-col">9º</td>
+          <td class="sticky-col-2">Bruna</td>
+          <td>140</td>
           <td>60</td>
           <td>45</td>
           <td>90</td>
           <td>30</td>
           <td>90</td>
           <td>45</td>
+          <td>45</td>
+          <td>60</td>
+        </tr>
+        <tr class="">
+          <td class="sticky-col">10º</td>
+          <td class="sticky-col-2">Josevitorpedreiro</td>
+          <td>120</td>
+          <td>60</td>
+          <td>45</td>
+          <td>90</td>
+          <td>30</td>
+          <td>90</td>
+          <td>30</td>
           <td>45</td>
           <td>60</td>
         </tr>
