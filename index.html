@@ -27,10 +27,10 @@
     }
 
     th, td {
-      padding: 12px 8px; /* Ajustado padding */
+      padding: 12px 8px;
       text-align: center;
       border-bottom: 1px solid #eee;
-      white-space: nowrap; /* Adicionado para evitar quebra de linha em nomes longos */
+      white-space: nowrap;
     }
 
     th {
@@ -48,17 +48,17 @@
       left: 0;
       background: white;
       box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
-      z-index: 2; /* Aumentado z-index para garantir que fique por cima */
-      min-width: 60px; /* Largura mínima para a coluna de posição */
-      width: 60px; /* Largura fixa */
+      z-index: 2;
+      min-width: 60px;
+      width: 60px;
     }
 
     .sticky-col-2 {
       position: sticky;
-      left: 60px; /* Largura da primeira coluna */
+      left: 60px;
       background: white;
       box-shadow: 2px 0 4px rgba(0, 0, 0, 0.02);
-      z-index: 2; /* Aumentado z-index para garantir que fique por cima */
+      z-index: 2;
     }
 
     .first-place {
@@ -68,11 +68,11 @@
 
     @media (max-width: 768px) {
       table {
-        font-size: 12px; /* Ajustado para menor em mobile */
-        min-width: unset; /* Remove min-width em mobile para melhor adaptação */
+        font-size: 12px;
+        min-width: unset;
       }
       th, td {
-        padding: 6px 6px; /* Ajustado padding em mobile */
+        padding: 6px 6px;
       }
     }
   </style>
@@ -96,58 +96,58 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="first-place">
-          <td class="sticky-col">1º</td>
-          <td class="sticky-col-2">Rafael Pinheiro</td>
-          <td>4</td>
-          <td>2</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>6</td>
-          <td>3</td>
-          <td>3</td>
-          <td>66.66666666666666</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">2º</td>
-          <td class="sticky-col-2">Fernando Areco</td>
-          <td>3</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>0</td>
-          <td>1</td>
-          <td>0</td>
-          <td>1</td>
-          <td>100</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">3º</td>
-          <td class="sticky-col-2">Rafael Montanger</td>
-          <td>1</td>
-          <td>2</td>
-          <td>0</td>
-          <td>1</td>
-          <td>1</td>
-          <td>3</td>
-          <td>6</td>
-          <td>-3</td>
-          <td>16.666666666666664</td>
-        </tr>
-        <tr class="">
-          <td class="sticky-col">4º</td>
-          <td class="sticky-col-2">Gamebit </td>
-          <td>0</td>
-          <td>1</td>
-          <td>0</td>
-          <td>0</td>
-          <td>1</td>
-          <td>0</td>
-          <td>1</td>
-          <td>-1</td>
-          <td>N/A</td>
-        </tr>
+    <tr class="first-place">
+      <td class="sticky-col">1º</td>
+      <td class="sticky-col-2">Rafael Pinheiro</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>3</td>
+      <td>3</td>
+      <td>67%</td>
+    </tr>
+    <tr class="">
+      <td class="sticky-col">2º</td>
+      <td class="sticky-col-2">Fernando Areco</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>100%</td>
+    </tr>
+    <tr class="">
+      <td class="sticky-col">3º</td>
+      <td class="sticky-col-2">Rafael Montanger</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>-3</td>
+      <td>17%</td>
+    </tr>
+    <tr class="">
+      <td class="sticky-col">4º</td>
+      <td class="sticky-col-2">Gamebit </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>0%</td>
+    </tr>
       </tbody>
     </table>
   </div>
