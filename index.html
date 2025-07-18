@@ -10,10 +10,14 @@
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       margin: 0;
-      padding: 2rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
     }
 
     .ranking-container {
+      width: 100%;
+      max-width: 1200px;
       overflow-x: auto;
       background: white;
       border-radius: 12px;
@@ -67,12 +71,21 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        padding: 0.5rem;
+      }
+
       table {
         font-size: 12px;
         min-width: unset;
       }
+
       th, td {
-        padding: 6px 6px;
+        padding: 6px 4px;
+      }
+
+      .sticky-col, .sticky-col-2 {
+        min-width: 50px;
       }
     }
   </style>
