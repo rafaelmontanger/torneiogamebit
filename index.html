@@ -24,14 +24,14 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 960px;
+      min-width: 960px; /* Garante que a tabela tenha uma largura mínima para o scroll */
     }
 
     th, td {
       padding: 12px 8px;
       text-align: center;
       border-bottom: 1px solid #eee;
-      white-space: nowrap;
+      white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
     }
 
     th {
@@ -48,22 +48,24 @@
       position: sticky;
       left: 0;
       background: white;
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
-      z-index: 2;
+      /* Correção: box-shadow para prevenir o "sangramento" do conteúdo scrollado */
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Sombra mais visível para a direita */
+      z-index: 2; /* Garante que fique acima do conteúdo que passa por baixo */
       min-width: 60px;
       width: 60px;
     }
 
     .sticky-col-2 {
       position: sticky;
-      left: 60px;
+      left: 60px; /* Posiciona a segunda coluna pegajosa após a primeira */
       background: white;
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.02);
-      z-index: 2;
+      /* Correção: box-shadow para prevenir o "sangramento" do conteúdo scrollado */
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.08); /* Sombra mais visível para a direita, ligeiramente menos que a primeira */
+      z-index: 2; /* Garante que fique acima do conteúdo que passa por baixo */
     }
 
     .first-place {
-      background-color: #fff5d0;
+      background-color: #fff5d0; /* Fundo amarelo claro para o primeiro lugar */
       font-weight: bold;
     }
 
@@ -74,7 +76,7 @@
 
       table {
         font-size: 12px;
-        min-width: unset;
+        min-width: unset; /* Permite que a largura mínima seja resetada em telas menores */
       }
 
       th, td {
