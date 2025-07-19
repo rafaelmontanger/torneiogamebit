@@ -24,14 +24,14 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 960px; /* Garante que a tabela tenha uma largura mínima para o scroll */
+      min-width: 960px;
     }
 
     th, td {
       padding: 12px 8px;
       text-align: center;
       border-bottom: 1px solid #eee;
-      white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+      white-space: nowrap;
     }
 
     th {
@@ -44,28 +44,30 @@
       font-size: 14px;
     }
 
-    .sticky-col {
+    .sticky-col, .sticky-col-2 {
       position: sticky;
+      background-color: white;
+      z-index: 10;
+    }
+
+    .sticky-col {
       left: 0;
-      background: white;
-      /* Correção: box-shadow para prevenir o "sangramento" do conteúdo scrollado */
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Sombra mais visível para a direita */
-      z-index: 2; /* Garante que fique acima do conteúdo que passa por baixo */
       min-width: 60px;
       width: 60px;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+      border-right: 1px solid #ddd;
     }
 
     .sticky-col-2 {
-      position: sticky;
-      left: 60px; /* Posiciona a segunda coluna pegajosa após a primeira */
-      background: white;
-      /* Correção: box-shadow para prevenir o "sangramento" do conteúdo scrollado */
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.08); /* Sombra mais visível para a direita, ligeiramente menos que a primeira */
-      z-index: 2; /* Garante que fique acima do conteúdo que passa por baixo */
+      left: 60px;
+      min-width: 120px;
+      width: 120px;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
+      border-right: 1px solid #ddd;
     }
 
     .first-place {
-      background-color: #fff5d0; /* Fundo amarelo claro para o primeiro lugar */
+      background-color: #fff5d0;
       font-weight: bold;
     }
 
@@ -76,7 +78,7 @@
 
       table {
         font-size: 12px;
-        min-width: unset; /* Permite que a largura mínima seja resetada em telas menores */
+        min-width: unset;
       }
 
       th, td {
@@ -85,6 +87,7 @@
 
       .sticky-col, .sticky-col-2 {
         min-width: 50px;
+        z-index: 10;
       }
     }
   </style>
