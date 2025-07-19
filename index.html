@@ -28,6 +28,7 @@
     }
 
     th, td {
+      background-color: white;
       padding: 12px 8px;
       text-align: center;
       border-bottom: 1px solid #eee;
@@ -46,24 +47,24 @@
 
     .sticky-col, .sticky-col-2 {
       position: sticky;
-      background-color: white;
-      z-index: 10;
+      background: white;
+      z-index: 100;
     }
 
     .sticky-col {
       left: 0;
       min-width: 60px;
       width: 60px;
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
       border-right: 1px solid #ddd;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.08);
     }
 
     .sticky-col-2 {
       left: 60px;
-      min-width: 120px;
-      width: 120px;
-      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
+      min-width: 140px;
+      width: 140px;
       border-right: 1px solid #ddd;
+      box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
     }
 
     .first-place {
@@ -85,9 +86,16 @@
         padding: 6px 4px;
       }
 
-      .sticky-col, .sticky-col-2 {
+      .sticky-col {
         min-width: 50px;
-        z-index: 10;
+        width: 50px;
+        left: 0;
+      }
+
+      .sticky-col-2 {
+        min-width: 120px;
+        width: 120px;
+        left: 50px;
       }
     }
   </style>
